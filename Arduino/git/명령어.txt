@@ -1,0 +1,66 @@
+cd c:/
+
+pwd
+
+mkdir git-test
+
+cd git-test
+
+
+vim test.txt
+
+......
+
+esc, shift + : + wq 		// 텍스트파일에서 나가는거
+
+
+ls -al
+
+git init			// 그 폴더를 관리함
+
+
+git status			// 상태
+
+
+
+git add test.txt 		// 그 파일을 관리함
+
+
+git add . 			// 그파일 안의 모든 것을 알아서 관리함
+
+
+
+git commit -m '첫번째 대단한 커밋'	// 변화한 후의 상태를 메세지로 표현
+
+
+
+git reset --hard		// 수정하기 전으로 돌아감
+
+
+
+
+
+git log				// 변환하는 log를 보여줌
+
+
+
+
+git checkout 334091910eabfd4bcb51257289ce6649387d9d4d		// 폴더의 시점을 commit된 것으로 바꿈
+
+
+
+touch test.txrt
+
+
+
+git checkout -b goggy 						// log보일때 head 에 goggy가 추가됨
+
+
+git checkout master		// 마스터로 갔다가
+
+git merge doggy			// doggy와 마스터를 합쳐짐
+
+
+
+git branch --list
+
